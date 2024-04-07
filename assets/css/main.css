@@ -87,7 +87,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #f0f0f0;
+		background: #1a1a1a;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -112,7 +112,7 @@ input, select, textarea {
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 600;
 		text-transform: uppercase;
-		color: #888;
+		color: #173a00;
 	}
 
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -148,9 +148,9 @@ input, select, textarea {
 		-webkit-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
 		-ms-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
 		transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
-		color: #666;
+		color: #173a00;
 		text-decoration: none;
-		border-bottom: solid 1px #ddd;
+		border-bottom: solid 1px #173a00;
 	}
 
 		a strong {

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quandary Demo</title>
+</head>
+<body>
+    <h1>Quandary Demo</h1>
+
+    Enter Quandary here:
+
+    <input type="text" id="quandary"/>
+
+    <button type="submit" onclick="getResponse()">Get Response</button>
+
+    <p id="responseBox">Response goes here</p>
+
+    <script>
+        function getResponse() {
+            var quandary = document.getElementById("quandary").value;
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    var response = JSON.parse(this.responseText);
+                    document.getElementById("responseBox").innerHTML = response.prediction;
+                }
+            };
+            xhttp.open("GET", "http://jamesrobinson.pythonanywhere.com/" + quandary, true);
+            xhttp.send();
+        }
+    </script>
+    
+</body>
+</html>
